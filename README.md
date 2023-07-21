@@ -7,10 +7,10 @@
 * Queries against the corpus are thread-safe, and NOT synchronized.
 * This implementation uses Porter-stemming by default, and is most appropriate for the English language.
 
-## See also:
+## References:
 
-[Cosine Similarity](https://en.wikipedia.org/wiki/Cosine_similarity)
-[Edel Garcia, Ph.D.](http://minerazzi.com/)
-[Frobenius norm](https://mathworld.wolfram.com/FrobeniusNorm.html)
-[Porter Stemming](https://tartarus.org/martin/PorterStemmer/)
+* [Cosine Similarity](https://en.wikipedia.org/wiki/Cosine_similarity)
+* [Edel Garcia, Ph.D.](http://minerazzi.com/)
+* [Frobenius norm](https://mathworld.wolfram.com/FrobeniusNorm.html)
+* [Porter Stemming](https://tartarus.org/martin/PorterStemmer/)
 
