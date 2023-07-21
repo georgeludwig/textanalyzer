@@ -1,4 +1,3 @@
-# textanalyzer
 # Cosine similarity text analyzer with Frobenius normalization
 
 * Frobenius normalization is used to minimize impact of term stuffing.
