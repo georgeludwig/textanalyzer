@@ -79,7 +79,7 @@ public class Stopwords {
   public Stopwords() {
     m_Words = new HashSet();
 
-    //Stopwords list from Rainbow
+    // Stopwords list from Rainbow
     add("a");
     add("able");
     add("about");
