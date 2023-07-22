@@ -18,7 +18,7 @@ public class WordFrequencyAnalyzer extends AbstractTextAnalyzer {
 	/**
 	 * decomposes the input string in to words, adds the 
 	 * individual words to the appropriate containers
-	 * @param words
+	 * @param string
 	 */
 	public String addStringToAnalysis(String string) {
 		// clean text
@@ -56,8 +56,6 @@ public class WordFrequencyAnalyzer extends AbstractTextAnalyzer {
 	 * returns the most frequent words from the word list, with the results being modified by the params
 	 * 
 	 * @param wordCount the max number of word to be returned
-	 * @param minWordLength the minimum length of the words that are returned
-	 * @param maxWordLength the maximum length of the words that are returned
 	 * @return
 	 */
 	public List<AnalyzerTerm>getTopTerms(int wordCount) {
