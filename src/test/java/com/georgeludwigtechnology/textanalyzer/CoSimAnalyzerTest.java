@@ -16,7 +16,7 @@ public class CoSimAnalyzerTest {
 	public void testApp() throws Exception {
 		// create the analyzer
 		CoSimAnalyzer analyzer=new CoSimAnalyzer();
-		// set doc params
+		// set optional doc params
 //		Document.setCleanPunctuation(true);
 //		Document.setUseStemming(true);
 //		Document.setRemoveStopWords(true);
