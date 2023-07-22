@@ -16,7 +16,6 @@ public class InputCleaningTest {
 		analyzer.setRemoveStopWords(true);
 		analyzer.setUseStemming(true);
 		analyzer.preprocessText("all of my words are preconceived anti-notions of allegorical instances");
-		Assertions.assertTrue(true); // TODO use exception catcher of junit
 	}
 	
 	@AfterEach
