@@ -56,4 +56,8 @@ public class Word implements Comparable<Word> {
 			return 1;
 		return 0;
 	}
+
+	public String toString() {
+		return "word: \'"+getWord()+"\' weight: "+getWeight()+" freq: "+getFrequency();
+	}
 }
