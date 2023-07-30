@@ -52,13 +52,11 @@ public class CoSimAnalyzer {
 				// if it contains the word, inc the frequency
 				if(globalWordMap.containsKey(wordString)) {
 					Word globalWord=globalWordMap.get(wordString);
-//					globalWord.incFrequency(word.getFrequency());
 					globalWord.incFrequency(1);
 				} else {
 					//  create a new word and add it to the map
 					Word globalWord=new Word();
 					globalWord.setWord(wordString);
-//					globalWord.incFrequency(word.getFrequency());
 					globalWord.incFrequency(1);
 					globalWordMap.put(globalWord.getWord(), globalWord);
 				}
