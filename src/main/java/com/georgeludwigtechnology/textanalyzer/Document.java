@@ -83,7 +83,7 @@ public class Document implements Comparable<Document> {
 		return ret;
 	}
 	
-	private static boolean useStemming;
+	private static boolean useStemming=false;
 
 	public static boolean isUseStemming() {
 		return useStemming;
@@ -93,7 +93,7 @@ public class Document implements Comparable<Document> {
 		Document.useStemming = useStemming;
 	}
 	
-	private static boolean removeStopWords;
+	private static boolean removeStopWords=false;
 
 	public static boolean isRemoveStopWords() {
 		return removeStopWords;
@@ -103,7 +103,7 @@ public class Document implements Comparable<Document> {
 		Document.removeStopWords = removeStopWords;
 	}
 	
-	private static boolean cleanPunctuation;
+	private static boolean cleanPunctuation=false;
 
 	public static boolean isCleanPunctuation() {
 		return cleanPunctuation;
@@ -196,7 +196,7 @@ public class Document implements Comparable<Document> {
 	}
 
 	public String toString() {
-		return "oText: \'"+getOriginalText()+"\' pText: \'"+getText()+"\' coSim: "+getCoSim()+" froNorm: "+getFrobeniusNorm()+" TWF: "+getTotalWordFrequency();
+		return "oText: '"+getOriginalText()+"' pText: '"+getText()+"' coSim: "+getCoSim()+" froNorm: "+getFrobeniusNorm()+" TWF: "+getTotalWordFrequency();
 	}
 	
 }
