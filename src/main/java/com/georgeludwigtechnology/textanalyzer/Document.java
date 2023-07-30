@@ -9,17 +9,10 @@ public class Document implements Comparable<Document> {
 
 	public Document() {	}
 
-	public Document(String text, boolean cleanPunctuation, boolean useStemming, boolean removeStopWords) {
-		setCleanPunctuation(cleanPunctuation);
-		setUseStemming(useStemming);
-		setRemoveStopWords(removeStopWords);
-		setText(text);
-	}
-	
 	public Document(String text) {
 		setText(text);
 	}
-	
+
 	private String text;
 
 	public String getText() {
@@ -90,34 +83,34 @@ public class Document implements Comparable<Document> {
 		return ret;
 	}
 	
-	private boolean useStemming;
+	private static boolean useStemming;
 
-	public boolean isUseStemming() {
+	public static boolean isUseStemming() {
 		return useStemming;
 	}
 
-	public void setUseStemming(boolean useStemming) {
-		this.useStemming = useStemming;
+	public static void setUseStemming(boolean useStemming) {
+		Document.useStemming = useStemming;
 	}
 	
-	private boolean removeStopWords;
+	private static boolean removeStopWords;
 
-	public boolean isRemoveStopWords() {
+	public static boolean isRemoveStopWords() {
 		return removeStopWords;
 	}
 
-	public void setRemoveStopWords(boolean removeStopWords) {
-		this.removeStopWords = removeStopWords;
+	public static void setRemoveStopWords(boolean removeStopWords) {
+		Document.removeStopWords = removeStopWords;
 	}
 	
-	private boolean cleanPunctuation;
+	private static boolean cleanPunctuation;
 
-	public boolean isCleanPunctuation() {
+	public static boolean isCleanPunctuation() {
 		return cleanPunctuation;
 	}
 
-	public void setCleanPunctuation(boolean cleanPunctuation) {
-		this.cleanPunctuation = cleanPunctuation;
+	public static void setCleanPunctuation(boolean cleanPunctuation) {
+		Document.cleanPunctuation = cleanPunctuation;
 	}
 	
 	public String preprocessText(String text) {
