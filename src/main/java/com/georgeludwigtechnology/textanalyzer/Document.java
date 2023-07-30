@@ -9,10 +9,11 @@ public class Document implements Comparable<Document> {
 
 	public Document() {	}
 
-	public Document(boolean cleanPunctuation, boolean useStemming, boolean removeStopWords) {
+	public Document(String text, boolean cleanPunctuation, boolean useStemming, boolean removeStopWords) {
 		setCleanPunctuation(cleanPunctuation);
 		setUseStemming(useStemming);
 		setRemoveStopWords(removeStopWords);
+		setText(text);
 	}
 	
 	public Document(String text) {
@@ -29,7 +30,7 @@ public class Document implements Comparable<Document> {
 		setOriginalText(text);
 		// clean the text
 		this.text=preprocessText(text);
-		// split in to words, and add to word map
+		// split into words, and add to word map
 		setWordMap(new HashMap<String,Word>());
 		parseInput(this.text);
 	}
@@ -199,6 +200,10 @@ public class Document implements Comparable<Document> {
 
 	public void setOriginalText(String originalText) {
 		this.originalText = originalText;
+	}
+
+	public String toString() {
+		return "oText: \'"+getOriginalText()+"\' pText: \'"+getText()+"\' coSim: "+getCoSim()+" froNorm: "+getFrobeniusNorm()+" TWF: "+getTotalWordFrequency();
 	}
 	
 }
